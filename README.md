@@ -57,6 +57,8 @@ Now you can make requests to various endpoints of the application.
 
 To make requests to the various endpoints you can use an API client like Insomnia, Postman, etc.
 
+[Click Here for Walkthrough Video](https://app.castify.com/view/ab71c7d6-814c-4651-82e7-2954868af555)
+
 Default Endpoint: `http://localhost:3001/api`
 
 - Product Example Requests:
@@ -69,29 +71,29 @@ Default Endpoint: `http://localhost:3001/api`
 
     `GET: /products/{id}`
 
-  - UPDATE a Product
-
-    `PUT: /products/{id}`
-
-    ```
-    body: {
-        "product_name": "Basketball",
-        "price": 20.00,
-        "stock": 3,
-        "tagIds": [1, 2, 3]
-    }
-    ```
-
   - CREATE a Product
 
     `POST: /products`
 
     ```
     body: {
-        "product_name": "Basketball",
+        "product_name": "Football",
         "price": 20.00,
         "stock": 3,
-        "tagIds": [1, 2, 3]
+        "tagIds": [1, 2, 3, 4]
+    }
+    ```
+
+  - UPDATE a Product
+
+    `PUT: /products/{id}`
+
+    ```
+    body: {
+        "product_name": "Football",
+        "price": 30.00,
+        "stock": 5,
+        "tagIds": [1, 2, 3, 4]
     }
     ```
 
@@ -109,23 +111,23 @@ Default Endpoint: `http://localhost:3001/api`
 
     `GET: /categories/{id}`
 
-  - UPDATE a Category
-
-    `PUT: /categories/{id}`
-
-    ```
-    body: {
-        "category_name": "Outdoor"
-    }
-    ```
-
   - CREATE a Category
 
     `POST: /categories`
 
     ```
     body: {
-        "category_name": "Outdoor"
+        "category_name": "Outdoors"
+    }
+    ```
+
+  - UPDATE a Category
+
+    `PUT: /categories/{id}`
+
+    ```
+    body: {
+        "category_name": "Indoors"
     }
     ```
 
@@ -143,16 +145,6 @@ Default Endpoint: `http://localhost:3001/api`
 
     `GET: /tags/{id}`
 
-  - UPDATE a Tag
-
-    `PUT: /tags/{id}`
-
-    ```
-    body: {
-        tag_name: "Clearance"
-    }
-    ```
-
   - CREATE a Tag
 
     `POST: /tags`
@@ -160,6 +152,16 @@ Default Endpoint: `http://localhost:3001/api`
     ```
     body: {
         tag_name: "Clearance"
+    }
+    ```
+
+  - UPDATE a Tag
+
+    `PUT: /tags/{id}`
+
+    ```
+    body: {
+        tag_name: "Sale"
     }
     ```
 
