@@ -59,6 +59,8 @@ To make requests to the various endpoints you can use an API client like Insomni
 
 [Click Here for Walkthrough Video](https://app.castify.com/view/ab71c7d6-814c-4651-82e7-2954868af555)
 
+Run `npm start` in your terminal to launch & sync the server with our database!
+
 Default Endpoint: `http://localhost:3001/api`
 
 - Product Example Requests:
